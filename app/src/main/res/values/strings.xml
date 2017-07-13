@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Dark.Weather</string>
+
+
+    <string name="degrees_icon">°</string>
+    <string name="connection_failed_error_message"> Here\'s a picture of a dinosaur, we\'ve lost connection to the weather man. Please check again soon.</string>
+    <string name="connection_failed_error_image_content_description"> Image of a dinosaur</string>
+    <string name="weather_forecast_logo_content_description"> Image of a sun and cloud, this is the app logo </string>
+    <string name="placeholder_weather_icon_content_description"> This is a placeholder image for the weather icon, which is the sun.</string>
+    <string name="placeholder_time_icon_content_description"> This is a cartoon image of a clock face.</string>
+    <string name="placeholder_temperature_icon_content_description"> This is a cartoon image of a thermometer.</string>
+    <string name="city_name">Edinburgh</string>
+    <string name="rain_title">Rain</string>
+    <string name="forecast_title">Forecast</string>
+    <string name="wind_title">Wind</string>
+    <string name="temperature_title">Temperature</string>
+
+
+
+
+</resources>

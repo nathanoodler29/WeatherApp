@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="prototype.android.darkweather.WeatherExtraDetail">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_time_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        card_view:cardBackgroundColor="@color/testing">
+
+
+        <TextView
+
+            style="@style/city_heading_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="@string/city_name"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/weather_time"
+            style="@style/city_heading_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:text="Time "
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/temp_card"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/card_time_city"
+
+        card_view:cardBackgroundColor="@color/cream">
+
+
+        <TextView
+            style="@style/city_heading_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="@string/temperature_title"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/actual_temp"
+            style="@style/city_heading_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/weather_feels_like"
+            style="@style/city_heading_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="140dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+
+            />
+
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="75dp"
+            android:contentDescription="@string/placeholder_temperature_icon_content_description"
+
+            android:src="@drawable/thermometer" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/weather_forecast_card"
+        android:layout_width="200dp"
+
+        android:layout_height="200dp"
+        android:layout_below="@+id/temp_card"
+
+        card_view:cardBackgroundColor="@android:color/darker_gray">
+
+
+        <TextView
+            style="@style/city_heading_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="@string/forecast_title"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/weather_forecast"
+            style="@style/city_heading_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/weather_wind"
+        android:layout_width="match_parent"
+
+        android:layout_height="200dp"
+        android:layout_below="@+id/card_time_city"
+
+        android:layout_toRightOf="@+id/temp_card"
+        card_view:cardBackgroundColor="@android:color/holo_green_light">
+
+
+        <TextView
+            style="@style/city_heading_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="@string/wind_title"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+
+            />
+
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="75dp"
+            android:contentDescription="@string/placeholder_temperature_icon_content_description"
+
+            android:src="@drawable/windy" />
+
+
+        <TextView
+            android:id="@+id/wind_speed"
+            style="@style/city_heading_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="80dp"
+            android:text=""
+            android:textAlignment="center"
+
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/wind_bearing"
+            style="@style/city_heading_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="140dp"
+            android:text=""
+            android:textAlignment="center"
+
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/rain"
+        android:layout_width="match_parent"
+
+        android:layout_height="200dp"
+        android:layout_below="@+id/weather_wind"
+
+        android:layout_toRightOf="@+id/temp_card"
+        card_view:cardBackgroundColor="@color/rain">
+
+
+        <TextView
+            style="@style/city_heading_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="@string/rain_title"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/percentage_rain"
+            style="@style/city_heading_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="80dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+
+            />
+
+
+        <ImageView
+
+            android:id="@+id/rain_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="55dp"
+            android:contentDescription="@string/placeholder_temperature_icon_content_description"
+            android:src="@drawable/umberlla" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
